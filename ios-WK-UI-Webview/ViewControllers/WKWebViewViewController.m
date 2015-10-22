@@ -24,7 +24,7 @@
     _wkWebView = [[WKWebView alloc] initWithFrame:frameWebView configuration:theConfiguration];
     _wkWebView.navigationDelegate = self;
     
-    NSURL *url = [NSURL URLWithString:@"https://html5test.com/"];
+    NSURL *url = [NSURL URLWithString:DEFAULT_URL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [_wkWebView loadRequest:request];
     [self.view addSubview:_wkWebView];

@@ -6,8 +6,6 @@
 //  Copyright © 2015 Bocamuchas. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface UIWebViewViewController : UIViewController
 
 @end

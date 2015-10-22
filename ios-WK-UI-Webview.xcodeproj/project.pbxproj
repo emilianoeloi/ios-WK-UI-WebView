@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC1905E31BB9E3EB001B78B0 /* WebviewShare.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1905E21BB9E3EB001B78B0 /* WebviewShare.m */; settings = {ASSET_TAGS = (); }; };
 		AC5CA0E81BA87E1D001BC774 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA0E71BA87E1D001BC774 /* main.m */; };
 		AC5CA0EB1BA87E1D001BC774 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA0EA1BA87E1D001BC774 /* AppDelegate.m */; };
 		AC5CA0EE1BA87E1D001BC774 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA0ED1BA87E1D001BC774 /* ViewController.m */; };
@@ -18,6 +19,11 @@
 		AC5CA10F1BA87E1D001BC774 /* ios_WK_UI_WebviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA10E1BA87E1D001BC774 /* ios_WK_UI_WebviewUITests.m */; };
 		AC5CA11F1BA880B7001BC774 /* UIWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA11E1BA880B7001BC774 /* UIWebViewViewController.m */; };
 		AC5CA1221BA880EC001BC774 /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA1211BA880EC001BC774 /* WKWebViewViewController.m */; };
+		ACA481601BD9715B0036ABFE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA4815F1BD9715B0036ABFE /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		ACA481631BD9729D0036ABFE /* FallbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA481621BD9729D0036ABFE /* FallbackViewController.m */; settings = {ASSET_TAGS = (); }; };
+		ACA481661BD977330036ABFE /* WIWebViewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA481651BD977330036ABFE /* WIWebViewProvider.m */; settings = {ASSET_TAGS = (); }; };
+		ACA481691BD978D60036ABFE /* UIWebView+WIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA481681BD978D60036ABFE /* UIWebView+WIWebView.m */; settings = {ASSET_TAGS = (); }; };
+		ACA4816C1BD979CE0036ABFE /* WKWebView+WIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA4816B1BD979CE0036ABFE /* WKWebView+WIWebView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC1905DD1BB9A67A001B78B0 /* WKUIWebview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WKUIWebview-Prefix.pch"; sourceTree = "<group>"; };
+		AC1905E11BB9E3EB001B78B0 /* WebviewShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebviewShare.h; sourceTree = "<group>"; };
+		AC1905E21BB9E3EB001B78B0 /* WebviewShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebviewShare.m; sourceTree = "<group>"; };
+		AC1905E41BB9E6B4001B78B0 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		AC5CA0E31BA87E1D001BC774 /* ios-WK-UI-Webview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-WK-UI-Webview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5CA0E71BA87E1D001BC774 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AC5CA0E91BA87E1D001BC774 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +69,15 @@
 		AC5CA11E1BA880B7001BC774 /* UIWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UIWebViewViewController.m; path = ViewControllers/UIWebViewViewController.m; sourceTree = "<group>"; };
 		AC5CA1201BA880EC001BC774 /* WKWebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKWebViewViewController.h; path = ViewControllers/WKWebViewViewController.h; sourceTree = "<group>"; };
 		AC5CA1211BA880EC001BC774 /* WKWebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKWebViewViewController.m; path = ViewControllers/WKWebViewViewController.m; sourceTree = "<group>"; };
+		ACA4815F1BD9715B0036ABFE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		ACA481611BD9729D0036ABFE /* FallbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FallbackViewController.h; path = ViewControllers/FallbackViewController.h; sourceTree = "<group>"; };
+		ACA481621BD9729D0036ABFE /* FallbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FallbackViewController.m; path = ViewControllers/FallbackViewController.m; sourceTree = "<group>"; };
+		ACA481641BD977330036ABFE /* WIWebViewProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WIWebViewProvider.h; path = ViewControllers/WIWebViewProvider.h; sourceTree = "<group>"; };
+		ACA481651BD977330036ABFE /* WIWebViewProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WIWebViewProvider.m; path = ViewControllers/WIWebViewProvider.m; sourceTree = "<group>"; };
+		ACA481671BD978D60036ABFE /* UIWebView+WIWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIWebView+WIWebView.h"; path = "ViewControllers/UIWebView+WIWebView.h"; sourceTree = "<group>"; };
+		ACA481681BD978D60036ABFE /* UIWebView+WIWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+WIWebView.m"; path = "ViewControllers/UIWebView+WIWebView.m"; sourceTree = "<group>"; };
+		ACA4816A1BD979CE0036ABFE /* WKWebView+WIWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WKWebView+WIWebView.h"; path = "ViewControllers/WKWebView+WIWebView.h"; sourceTree = "<group>"; };
+		ACA4816B1BD979CE0036ABFE /* WKWebView+WIWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "WKWebView+WIWebView.m"; path = "ViewControllers/WKWebView+WIWebView.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACA481601BD9715B0036ABFE /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +109,7 @@
 		AC5CA0DA1BA87E1D001BC774 = {
 			isa = PBXGroup;
 			children = (
+				ACA4815F1BD9715B0036ABFE /* WebKit.framework */,
 				AC5CA0E51BA87E1D001BC774 /* ios-WK-UI-Webview */,
 				AC5CA1021BA87E1D001BC774 /* ios-WK-UI-WebviewTests */,
 				AC5CA10D1BA87E1D001BC774 /* ios-WK-UI-WebviewUITests */,
@@ -120,6 +141,8 @@
 				AC5CA0FA1BA87E1D001BC774 /* Info.plist */,
 				AC5CA0F21BA87E1D001BC774 /* ios_WK_UI_Webview.xcdatamodeld */,
 				AC5CA0E61BA87E1D001BC774 /* Supporting Files */,
+				AC1905E11BB9E3EB001B78B0 /* WebviewShare.h */,
+				AC1905E21BB9E3EB001B78B0 /* WebviewShare.m */,
 			);
 			path = "ios-WK-UI-Webview";
 			sourceTree = "<group>";
@@ -128,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				AC5CA0E71BA87E1D001BC774 /* main.m */,
+				AC1905DD1BB9A67A001B78B0 /* WKUIWebview-Prefix.pch */,
+				AC1905E41BB9E6B4001B78B0 /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -157,6 +182,14 @@
 				AC5CA11E1BA880B7001BC774 /* UIWebViewViewController.m */,
 				AC5CA1201BA880EC001BC774 /* WKWebViewViewController.h */,
 				AC5CA1211BA880EC001BC774 /* WKWebViewViewController.m */,
+				ACA481611BD9729D0036ABFE /* FallbackViewController.h */,
+				ACA481621BD9729D0036ABFE /* FallbackViewController.m */,
+				ACA481641BD977330036ABFE /* WIWebViewProvider.h */,
+				ACA481651BD977330036ABFE /* WIWebViewProvider.m */,
+				ACA481671BD978D60036ABFE /* UIWebView+WIWebView.h */,
+				ACA481681BD978D60036ABFE /* UIWebView+WIWebView.m */,
+				ACA4816A1BD979CE0036ABFE /* WKWebView+WIWebView.h */,
+				ACA4816B1BD979CE0036ABFE /* WKWebView+WIWebView.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -292,11 +325,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC5CA1221BA880EC001BC774 /* WKWebViewViewController.m in Sources */,
+				AC1905E31BB9E3EB001B78B0 /* WebviewShare.m in Sources */,
+				ACA481661BD977330036ABFE /* WIWebViewProvider.m in Sources */,
+				ACA481631BD9729D0036ABFE /* FallbackViewController.m in Sources */,
 				AC5CA0EE1BA87E1D001BC774 /* ViewController.m in Sources */,
 				AC5CA0EB1BA87E1D001BC774 /* AppDelegate.m in Sources */,
 				AC5CA0E81BA87E1D001BC774 /* main.m in Sources */,
+				ACA481691BD978D60036ABFE /* UIWebView+WIWebView.m in Sources */,
 				AC5CA0F41BA87E1D001BC774 /* ios_WK_UI_Webview.xcdatamodeld in Sources */,
 				AC5CA11F1BA880B7001BC774 /* UIWebViewViewController.m in Sources */,
+				ACA4816C1BD979CE0036ABFE /* WKWebView+WIWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +415,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "ios-WK-UI-Webview/WKUIWebview-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -418,6 +457,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "ios-WK-UI-Webview/WKUIWebview-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -436,7 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios-WK-UI-Webview/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.bocamuchas.emiliano.ios-WK-UI-Webview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios-WK-UI-Webview/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.bocamuchas.emiliano.ios-WK-UI-Webview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -522,6 +562,7 @@
 				AC5CA1151BA87E1D001BC774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC5CA1161BA87E1D001BC774 /* Build configuration list for PBXNativeTarget "ios-WK-UI-WebviewTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +571,7 @@
 				AC5CA1181BA87E1D001BC774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC5CA1191BA87E1D001BC774 /* Build configuration list for PBXNativeTarget "ios-WK-UI-WebviewUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +580,7 @@
 				AC5CA11B1BA87E1D001BC774 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

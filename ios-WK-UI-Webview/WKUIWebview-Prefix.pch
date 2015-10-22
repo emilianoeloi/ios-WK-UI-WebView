@@ -1,0 +1,23 @@
+//
+//  WKUIWebview-Prefix.pch
+//  ios-WK-UI-Webview
+//
+//  Created by Emiliano Barbosa on 9/28/15.
+//  Copyright © 2015 Bocamuchas. All rights reserved.
+//
+
+#ifndef WKUIWebview_Prefix_pch
+#define WKUIWebview_Prefix_pch
+
+#import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
+#import <Foundation/Foundation.h>
+
+#import "Constants.h"
+#import "WIWebViewProvider.h"
+#import "UIWebView+WIWebView.h"
+#import "WKWebView+WIWebView.h"
+
+
+
+#endif /* WKUIWebview_Prefix_pch */
