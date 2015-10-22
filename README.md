@@ -5,6 +5,8 @@ iOS WKWebView UIWebView
 
 ## Referencias
 
+How To Use iOS WKWebView with UIWebView Fallback: http://floatlearning.com/2014/12/one-webview-to-rule-them-all/
+
 WKWebView vs UIWebView: http://blog.initlabs.com/post/100113463211/wkwebview-vs-uiwebview
 
 WKWebView: https://developer.apple.com/library/ios/documentation/WebKit/Reference/WKWebView_Ref/index.html
