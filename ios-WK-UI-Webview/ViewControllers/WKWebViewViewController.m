@@ -8,7 +8,7 @@
 
 #import "WKWebViewViewController.h"
 
-@interface WKWebViewViewController () <WKNavigationDelegate>
+@interface WKWebViewViewController () <WKNavigationDelegate, WKUIDelegate>
 
 
 @property (strong, nonatomic) IBOutlet WKWebView *wkWebView;
@@ -19,10 +19,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (!NSClassFromString(@"WKWebView")) {
+        UILabel *notSupport = [[UILabel alloc]initWithFrame:CGRectMake(20, 20, 200, 100)];
+        [notSupport setText:@"Não Suportado"];
+        [notSupport setTextColor:[UIColor redColor]];
+        [self.view addSubview:notSupport];
+    }
+    
     WKWebViewConfiguration *theConfiguration = [[WKWebViewConfiguration alloc] init];
     CGRect frameWebView = CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y+20, self.view.frame.size.width, self.view.frame.size.height-75);
     _wkWebView = [[WKWebView alloc] initWithFrame:frameWebView configuration:theConfiguration];
     _wkWebView.navigationDelegate = self;
+    _wkWebView.UIDelegate = self;
     
     NSURL *url = [NSURL URLWithString:DEFAULT_URL];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

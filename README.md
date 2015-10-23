@@ -1,7 +1,72 @@
-# ios-WK-UI-WebView
-iOS WKWebView UIWebView
+# iOS WKWebView UIWebView
 
-"A WKWebView object displays interactive web content."
+"A WKWebView object displays interactive web content, such as for an in-app browser.
+
+For new development, employ this class instead of the older UIWebView class."
+
+## Initialize a Web View
+
+### Configuration
+
+A WKWebViewConfiguration object is a collection of properties used to initialize a web view.
+
+### ScrollView
+
+### Title
+
+### URL
+
+### customUserAgent
+
+### certificateChain
+
+## Delegates
+
+### navigationDelegate
+
+### UIDelegate
+
+## Loading Content
+
+### estimatedProgress
+
+### hasOnlySecuireContent
+
+### loadingHTMLStriong:baseURL:
+
+### loading
+
+### reloadFromOrigin
+
+### stopLoading
+
+### loadData:MIMEType:charseterEncodingName:baseURL:
+
+### loadFileURL:allowingReadAccessToURL:
+
+## Navigating
+
+### allowsBackForwardNavigationGestures
+
+### backForwardList
+
+### carGoBack
+
+### carGoForward
+
+### allowsLinkPreview
+
+### goBAck
+
+### goForward
+
+### goToBackForwardListItem:
+
+### loadRequest:
+
+## Executing JavaScript
+
+### evaluateJavascript:completionHandler:
 
 ## Referencias
 

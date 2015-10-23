@@ -9,7 +9,7 @@
 #ifndef Constants_h
 #define Constants_h
 
-#define DEFAULT_URL @"http://www.google.com"
+#define DEFAULT_URL @"https://html5test.com/"
 
 
 #endif /* Constants_h */
