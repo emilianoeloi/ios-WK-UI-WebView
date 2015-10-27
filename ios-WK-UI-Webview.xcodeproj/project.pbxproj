@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC1905E31BB9E3EB001B78B0 /* WebviewShare.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1905E21BB9E3EB001B78B0 /* WebviewShare.m */; settings = {ASSET_TAGS = (); }; };
+		AC1905E31BB9E3EB001B78B0 /* WebviewShare.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1905E21BB9E3EB001B78B0 /* WebviewShare.m */; };
 		AC5CA0E81BA87E1D001BC774 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA0E71BA87E1D001BC774 /* main.m */; };
 		AC5CA0EB1BA87E1D001BC774 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA0EA1BA87E1D001BC774 /* AppDelegate.m */; };
 		AC5CA0EE1BA87E1D001BC774 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA0ED1BA87E1D001BC774 /* ViewController.m */; };
@@ -20,10 +20,10 @@
 		AC5CA11F1BA880B7001BC774 /* UIWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA11E1BA880B7001BC774 /* UIWebViewViewController.m */; };
 		AC5CA1221BA880EC001BC774 /* WKWebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5CA1211BA880EC001BC774 /* WKWebViewViewController.m */; };
 		ACA481601BD9715B0036ABFE /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACA4815F1BD9715B0036ABFE /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		ACA481631BD9729D0036ABFE /* FallbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA481621BD9729D0036ABFE /* FallbackViewController.m */; settings = {ASSET_TAGS = (); }; };
-		ACA481661BD977330036ABFE /* WIWebViewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA481651BD977330036ABFE /* WIWebViewProvider.m */; settings = {ASSET_TAGS = (); }; };
-		ACA481691BD978D60036ABFE /* UIWebView+WIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA481681BD978D60036ABFE /* UIWebView+WIWebView.m */; settings = {ASSET_TAGS = (); }; };
-		ACA4816C1BD979CE0036ABFE /* WKWebView+WIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA4816B1BD979CE0036ABFE /* WKWebView+WIWebView.m */; settings = {ASSET_TAGS = (); }; };
+		ACA481631BD9729D0036ABFE /* FallbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA481621BD9729D0036ABFE /* FallbackViewController.m */; };
+		ACA481661BD977330036ABFE /* WIWebViewProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA481651BD977330036ABFE /* WIWebViewProvider.m */; };
+		ACA481691BD978D60036ABFE /* UIWebView+WIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA481681BD978D60036ABFE /* UIWebView+WIWebView.m */; };
+		ACA4816C1BD979CE0036ABFE /* WKWebView+WIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACA4816B1BD979CE0036ABFE /* WKWebView+WIWebView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +106,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC337EE51BDC204600ACB445 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
 		AC5CA0DA1BA87E1D001BC774 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +137,7 @@
 		AC5CA0E51BA87E1D001BC774 /* ios-WK-UI-Webview */ = {
 			isa = PBXGroup;
 			children = (
+				AC337EE51BDC204600ACB445 /* classes */,
 				AC5CA11C1BA88087001BC774 /* ViewControllers */,
 				AC5CA0E91BA87E1D001BC774 /* AppDelegate.h */,
 				AC5CA0EA1BA87E1D001BC774 /* AppDelegate.m */,

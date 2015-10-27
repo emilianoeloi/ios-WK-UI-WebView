@@ -15,4 +15,19 @@
     [self setUIDelegate:delegatelView];
 }
 
+-(BOOL)isFacebookLoginPage{
+    return [self.URL.absoluteString rangeOfString:FACEBOOK_LOGIN_PAGE_PATTERN].location != NSNotFound;
+}
+
+-(BOOL)isFacebookForwardPage{
+    return [self.URL.absoluteString rangeOfString:FACEBOOK_FORWARD_PAGE_PATTERN].location != NSNotFound;
+}
+
+-(void)forwardFacebook{
+    NSArray *urlParts = [self.URL.absoluteString componentsSeparatedByString:FACEBOOK_FORWARD_STRING_TO_SPLIT];
+    NSString *forwardUrl= [[urlParts[1] stringByReplacingOccurrencesOfString:@"+" withString:@" "] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *fURL = [NSURL URLWithString:forwardUrl];
+    [self loadRequest:[NSURLRequest requestWithURL:fURL]];
+}
+
 @end

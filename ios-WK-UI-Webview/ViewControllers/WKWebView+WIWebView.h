@@ -9,6 +9,12 @@
 
 @interface WKWebView (WIWebView) <WIWebViewProvider>
 
+
+
 -(void)setDelegateViews:(id<WKNavigationDelegate, WKUIDelegate>)delegatelView;
+
+-(BOOL) isFacebookLoginPage;
+-(BOOL) isFacebookForwardPage;
+-(void) forwardFacebook;
 
 @end

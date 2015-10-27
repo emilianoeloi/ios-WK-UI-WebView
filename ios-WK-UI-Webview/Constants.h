@@ -9,7 +9,12 @@
 #ifndef Constants_h
 #define Constants_h
 
-#define DEFAULT_URL @"https://html5test.com/"
+#define DEFAULT_URL @""
+#define FACEBOOK_LOGIN_PAGE_PATTERN @""
+#define FACEBOOK_FORWARD_PAGE_PATTERN @""
+#define FACEBOOK_FORWARD_STRING_TO_SPLIT @""
+
+typedef void (^CompletionBlock)(void);
 
 
 #endif /* Constants_h */
