@@ -18,6 +18,11 @@
 #import "UIWebView+WIWebView.h"
 #import "WKWebView+WIWebView.h"
 
+#pragma Bridge JS
+#import "WebViewJavascriptBridgeBase.h"
+#import "WKWebViewJavascriptBridge.h"
+#import "WebViewJavascriptBridge.h"
+
 
 
 #endif /* WKUIWebview_Prefix_pch */

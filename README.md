@@ -10,65 +10,67 @@ For new development, employ this class instead of the older UIWebView class."
 
 A WKWebViewConfiguration object is a collection of properties used to initialize a web view.
 
-### ScrollView
+	- ScrollView
 
-### Title
+	- Title
 
-### URL
+	- URL
 
-### customUserAgent
+	- customUserAgent
 
-### certificateChain
+	- certificateChain
 
 ## Delegates
 
-### navigationDelegate
+	- navigationDelegate
 
-### UIDelegate
+	- UIDelegate
 
 ## Loading Content
 
-### estimatedProgress
+	- estimatedProgress
 
-### hasOnlySecuireContent
+	- hasOnlySecuireContent
 
-### loadingHTMLStriong:baseURL:
+	- loadingHTMLStriong:baseURL:
 
-### loading
+	- loading
 
-### reloadFromOrigin
+	- reloadFromOrigin
 
-### stopLoading
+	- stopLoading
 
-### loadData:MIMEType:charseterEncodingName:baseURL:
+	- loadData:MIMEType:charseterEncodingName:baseURL:
 
-### loadFileURL:allowingReadAccessToURL:
+	- loadFileURL:allowingReadAccessToURL:
 
 ## Navigating
 
-### allowsBackForwardNavigationGestures
+	- allowsBackForwardNavigationGestures
 
-### backForwardList
+	- backForwardList
 
-### carGoBack
+	- carGoBack
 
-### carGoForward
+	- carGoForward
 
-### allowsLinkPreview
+	- allowsLinkPreview
 
-### goBAck
+	- goBAck
 
-### goForward
+	- goForward
 
-### goToBackForwardListItem:
+	- goToBackForwardListItem:
 
-### loadRequest:
+	- loadRequest:
 
 ## Executing JavaScript
 
-### evaluateJavascript:completionHandler:
+	- evaluateJavascript:completionHandler:
 
 ## Referencias
+
+Javascript Bridge: https://github.com/marcuswestin/WebViewJavascriptBridge
 
 How To Use iOS WKWebView with UIWebView Fallback: http://floatlearning.com/2014/12/one-webview-to-rule-them-all/
 

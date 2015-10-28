@@ -9,7 +9,7 @@
 #ifndef Constants_h
 #define Constants_h
 
-#define DEFAULT_URL @""
+#define DEFAULT_URL @"http://www.github.com"
 #define FACEBOOK_LOGIN_PAGE_PATTERN @""
 #define FACEBOOK_FORWARD_PAGE_PATTERN @""
 #define FACEBOOK_FORWARD_STRING_TO_SPLIT @""

@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *webviewText;
 @property (strong, nonatomic) WKWebView *wkWebView;
+@property (strong, nonatomic) WKWebViewJavascriptBridge* jsBridge;
 
 @end
 
@@ -25,6 +26,23 @@
         self.wkWebView = [[WKWebView alloc] initWithFrame:CGRectZero configuration:theConfiguration];
         self.wkWebView.navigationDelegate = self;
         self.wkWebView.UIDelegate = self;
+        
+        self.jsBridge = [WKWebViewJavascriptBridge bridgeForWebView:self.wkWebView handler:^(id data, WVJBResponseCallback responseCallback) {
+            NSLog(@"ObjC");
+            responseCallback(@"Response for message from ObjC");
+        }];
+        
+        [self.jsBridge registerHandler:@"testObjcCallback" handler:^(id data, WVJBResponseCallback responseCallback) {
+            NSLog(@"testObjecCallback called: %@", data);
+            responseCallback(@"REsponse from testeOPbjecCallback");
+        }];
+        
+        [self.jsBridge send:@"A string sent from ObjC befeore Webview has loaded." responseCallback:^(id responseData) {
+            NSLog(@"objc got reponse! %@", responseData);
+        }];
+        
+        [self.jsBridge callHandler:@"testJavascriptHandler" data:@{@"foo":@"before ready"}];
+        
     }
     return self;
 }
